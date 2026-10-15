@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafiu Ahamed | Mechanical Engineer & PhD Researcher</title>
+<meta name="description" content="Mechanical engineer and PhD student at KFUPM with 5+ years in pharmaceutical projects, utilities and reliability.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2312263A'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='700'>RA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --paper: #EEF2F4;
+    --ink: #12263A;
+    --steel: #56677A;
+    --teal: #0B6E7C;
+    --rule: #C3CFD8;
+    --card: #F9FBFC;
+    --head: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--body); }
+a { color: var(--teal); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 2px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+/* Navigation */
+header.nav { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); }
+header.nav .wrap { display: flex; gap: 22px; align-items: center; height: 52px; overflow-x: auto; white-space: nowrap; }
+header.nav b { font: 700 22px var(--head); letter-spacing: .02em; margin-right: auto; }
+header.nav a { color: var(--ink); text-decoration: none; font-size: 15px; }
+header.nav a:hover { color: var(--teal); }
+
+/* Hero Section */
+.hero { padding: 56px 0 24px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; }
+h1 { font: 700 clamp(56px, 9vw, 104px)/.9 var(--head); margin: 0 0 20px; letter-spacing: -.01em; }
+.lead { font-size: 19px; max-width: 34em; margin: 0 0 24px; }
+.btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 10px 20px; border: 2px solid var(--ink); text-decoration: none; color: var(--ink); font-weight: 600; font-size: 15px; transition: all 0.2s ease;}
+.btn.fill { background: var(--ink); color: #fff; }
+.btn:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+
+/* Tables */
+table.tb { width: 100%; border-collapse: collapse; border: 2px solid var(--ink); background: var(--card); font-size: 15px; }
+.tb th, .tb td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.tb th { width: 34%; color: var(--steel); font-weight: 500; border-right: 1px solid var(--rule); }
+.tb tr:last-child th, .tb tr:last-child td { border-bottom: 0; }
+
+/* SVG Animation */
+.pipe { display: block; width: 100%; height: 60px; margin: 36px 0 0; color: var(--ink); }
+.pipe .flow { stroke: var(--teal); stroke-width: 3; stroke-dasharray: 10 8; animation: flow 1.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -36; } }
+
+/* Stat Figures */
+.figs { display: grid; grid-template-columns: repeat(4, 1fr); border: 2px solid var(--ink); background: var(--card); margin-top: 8px; }
+.figs div { padding: 16px 18px; border-right: 1px solid var(--rule); }
+.figs div:last-child { border-right: 0; }
+.figs strong { display: block; font: 700 40px/1 var(--head); }
+.figs span { font-size: 14px; color: var(--steel); }
+
+/* Section Layouts */
+section { display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding: 44px 0; border-top: 2px solid var(--ink); margin-top: 48px; }
+h2 { font: 700 34px/1 var(--head); margin: 0; }
+h3 { font: 600 24px/1.15 var(--head); margin: 0; }
+.role { margin: 0 0 28px; padding-left: 20px; border-left: 3px solid var(--teal); }
+.role:last-child { margin-bottom: 0; }
+.meta { color: var(--steel); font-size: 15px; margin: 2px 0 8px; }
+ul { margin: 8px 0 0; padding-left: 20px; }
+li { margin-bottom: 5px; }
+.org { font: 600 20px var(--head); color: var(--teal); margin: 0 0 14px; }
+.proj { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.proj:first-child { padding-top: 0; }
+.proj:last-child { border-bottom: 0; }
+.proj p { margin: 6px 0 0; }
+.res { display: inline-block; margin-top: 8px; font-size: 14px; font-weight: 600; color: var(--teal); border: 1px solid var(--teal); padding: 1px 8px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.cols h3 { margin-bottom: 6px; }
+.cols ul { list-style: none; padding: 0; }
+.cols li { padding: 5px 0; border-bottom: 1px solid var(--rule); }
+
+footer { border-top: 2px solid var(--ink); margin-top: 48px; padding: 24px 0 48px; font-size: 14px; color: var(--steel); }
+
+@media(max-width: 820px) {
+    .hero { grid-template-columns: 1fr; }
+    .figs { grid-template-columns: 1fr 1fr; }
+    .figs div:nth-child(2) { border-right: 0; }
+    .figs div:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+    section { grid-template-columns: 1fr; gap: 16px; }
+    .cols { grid-template-columns: 1fr; }
+}
+@media(prefers-reduced-motion: reduce) {
+    .pipe .flow { animation: none; }
+    html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a href="#" aria-label="Home" style="margin-right: auto; display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+    <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 4L42 14.5V33.5L24 44L6 33.5V14.5L24 4Z" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M24 4V24M42 14.5L24 24M6 14.5L24 24M24 44V24" stroke="var(--teal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="24" cy="24" r="4" fill="var(--ink)"/>
+    </svg>
+</a>
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>Rafiu Ahamed</h1>
+<p class="lead">Mechanical engineer and PhD researcher. I spent five years keeping sterile pharmaceutical plants qualified, running and on schedule, and now studying mechanical engineering at KFUPM.</p>
+<div class="btns"><a class="btn fill" href="#contact">Get in touch</a><a class="btn" href="#projects">See my projects</a></div>
+</div>
+<table class="tb">
+<tr><th>Discipline</th><td>Mechanical engineering: reliability, utilities, industrial systems</td></tr>
+<tr><th>Now</th><td>PhD student and Graduate Teaching Assistant, KFUPM</td></tr>
+<tr><th>Before</th><td>Assistant Manager, Beacon Pharmaceuticals; Senior Assistant Manager, Renata PLC</td></tr>
+            <tr><th>Based in</th><td>Saudi Arabia</td></tr>
+        </table>
+    </div>
+
+    <svg class="pipe" viewBox="0 0 900 60" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="0" y1="30" x2="860" y2="30" class="flow"/>
+        <path d="M200 18 L224 30 L200 42 Z M248 18 L224 30 L248 42 Z" fill="var(--paper)"/>
+        <circle cx="450" cy="30" r="14" fill="var(--paper)"/>
+        <line x1="450" y1="16" x2="450" y2="4"/>
+        <path d="M650 18 L674 30 L650 42 Z M698 18 L674 30 L698 42 Z" fill="var(--paper)"/>
+        <rect x="860" y="10" width="38" height="40" rx="6" fill="var(--paper)"/>
+    </svg>
+
+    <div class="figs" role="list">
+        <div role="listitem"><strong>$20M+</strong><span>project portfolio delivered to EU-GMP and cGMP standards</span></div>
+        <div role="listitem"><strong>10+</strong><span>machines taken through FAT, SAT, IQ and OQ</span></div>
+        <div role="listitem"><strong>25+</strong><span>technicians led across maintenance and projects</span></div>
+        <div role="listitem"><strong>63 to 78%</strong><span>facility output after optimizing 20+ injectable products</span></div>
+    </div>
+
+    <section id="about">
+        <h2>About</h2>
+        <div>
+            <p style="margin-top:0">I am a PhD student in Mechanical Engineering and a Graduate Teaching Assistant at King Fahd University of Petroleum and Minerals (KFUPM). Before starting my PhD, I built over 5 years of hands-on experience in pharmaceutical projects and engineering maintenance, designing, purchasing, commissioning, and maintaining the critical utilities and production machinery that sterile manufacturing depends on.</p>
+            <p>At KFUPM, I support teaching and learning by running undergraduate lab sessions, grading reports, and helping students connect theoretical concepts to real industrial applications. My research and professional interests sit right where mechanical engineering, reliability, and complex industrial systems meet. I am always open to collaborations in that space.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div>
+            
+            <div class="role">
+                <h3>PhD Student & Graduate Teaching Assistant</h3>
+                <p class="meta">King Fahd University of Petroleum & Minerals (KFUPM), January 2026 to present</p>
+                <ul>
+                    <li>Guide undergraduate laboratory sessions, demonstrate engineering concepts, and promote safe lab practice.</li>
+                    <li>Evaluate lab reports, assignments, and exams, providing students with constructive, timely feedback.</li>
+                    <li>Coordinate with faculty and lab staff to ensure smooth execution of assessments and course administration.</li>
+                </ul>
+            </div>
+
+            <div class="role">
+                <h3>Assistant Manager, Project Management</h3>
+                <p class="meta">Beacon Pharmaceuticals PLC, September 2025 to January 2026</p>
+                <ul>
+                    <li>Planned and designed regulatory-compliant facilities for biotechnology, nutraceutical, oncology solid, and hormone products.</li>
+                    <li>Led procurement of capsule filling, tablet press, granulation, autoclave, isolator, PFS, and water systems, including BOQs and price negotiation.</li>
+                    <li>Supervised project execution and commissioning of major capital machinery.</li>
+                </ul>
+            </div>
+
+            <p class="org">Renata PLC, Oncology Injectable Facility (November 2020 to August 2025)</p>
+
+            <div class="role">
+                <h3>Senior Assistant Manager</h3>
+                <p class="meta">January 2024 to August 2025</p>
+                <ul>
+                    <li>Led 15 technicians and a 12-person mechanical workshop across operations, preventive, and predictive maintenance.</li>
+                    <li>Integrated a 3000 L/hr purified water system and a 2200 L/hr WFI system to existing distribution loops, managing IQ, OQ, PQ, and cutting lost productive time by 32%.</li>
+                    <li>Calculated production lead times and total cost structures for 20+ liquid and lyophilized products.</li>
+                    <li>Wrote GMP-compliant SOPs, built maintenance calendars, and trained junior executives.</li>
+                    <li>Implemented Annex I, EU-GMP, cGMP, and USP requirements via change control, CAPA, and deviation management.</li>
+                </ul>
+            </div>
+
+            <div class="role">
+                <h3>Assistant Manager, Project & Maintenance</h3>
+                <p class="meta">November 2020 to December 2023</p>
+                <ul>
+                    <li>Spearheaded project teams focusing on the design and execution of HVAC, compressed air, hot water, and pure steam for a $12M Oncology Injectable Facility.</li>
+                    <li>Designed, fabricated, and maintained utility systems for the central R&D and analytical facilities.</li>
+                    <li>Bought, installed, and commissioned water distribution plants, lyophilizers, and building management systems.</li>
+                    <li>Oversaw the procurement and installation of infrastructure for a 10,000 sq. ft. R&D laboratory valued at $205,000.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+<h2>Projects</h2>
+<div>
+<div class="proj"><h3>Estimation of Production Lead Time for 20 Pharmaceutical Products</h3><p>Conducted a systematic analysis of lead times for liquid and lyophilized formulations to identify bottlenecks. Mapped every step from raw material staging to packaging, uncovering inefficiencies in equipment turnover, freeze-drying cycles, and vial sealing. Applied time-motion assessments and resource alignment strategies to streamline process flow without compromising GMP compliance.</p><span class="res">Output up from 62% to 78%</span></div>
+<div class="proj"><h3>Design, Construction, and Validation of a Vial Crusher</h3><p>Developed a vial crusher specifically designed to safely dispose of glass vials containing carcinogenic solutions. Used SolidWorks for detailed 3D modeling and structural analysis, ensuring optimal containment and mechanical performance. Conducted thorough motor torque calculations across varying vial sizes, with validation through stress testing and containment verification.</p></div>
+<div class="proj"><h3>Precision Cooling Heat Exchanger for Industrial Freeze Dryers</h3><p>Designed and fabricated a heat exchanger engineered to maintain compressor temperatures below 15 °C in an industrial refrigeration system. Modeled in SolidWorks with detailed thermal analysis and cooling capacity calculations to ensure continuous precision cooling under varying load conditions, safeguarding compressor performance.</p></div>
+<div class="proj"><h3>Design and Fabrication of a Vial Inspection Booth</h3><p>Engineered a dedicated inspection booth aimed at enhancing the visual examination process for faulty vials within the production facility. Built with optimized lighting and ergonomic features, the system enabled meticulous scrutiny of vial defects such as cracks, leaks, and discolorations.</p><span class="res">Detection efficacy up from 60% to 75%</span></div>
+<div class="proj"><h3>Vertical Car Parking System with Forklift Mechanism</h3><p>Undergraduate thesis: Designed and constructed a 1:20-scale parking system using a forklift mechanism and ultrasonic slot detection. Included CAD-based dimensioning, mass/torque calculations, and a physical model integrating Arduino-controlled IR sensors to optimize space and indicate available slots.</p></div>
+<div class="proj"><h3>Paper Cutting Machine using Geneva Mechanism</h3><p>Developed a compact paper-cutting machine that uses a Geneva mechanism to convert continuous motor rotation into precise intermittent indexing of paper sheets. The wheel reliably positions each sheet at the cutting station, ensuring uniform, repeatable trims with minimal waste.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="cols">
+            <div>
+                <h3>Engineering & Technical</h3>
+                <ul>
+                    <li>Equipment Qualification (FAT, SAT, IQ, OQ, PQ)</li>
+                    <li>HVAC, BMS, and GMP Utilities</li>
+                    <li>Preventive & Predictive Maintenance</li>
+                    <li>Root Cause & Trend Analysis</li>
+                    <li>Equipment Design & Custom Fabrication</li>
+                    <li>Process Optimization & Lean Six Sigma</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Project & Management</h3>
+                <ul>
+                    <li>Project Estimation, Budgeting & Scheduling</li>
+                    <li>Procurement & Contract Management</li>
+                    <li>Stakeholder Management & Leadership</li>
+                    <li>SOP Development & Regulatory Compliance</li>
+                </ul>
+                <h3 style="margin-top:18px">Software</h3>
+                <ul>
+                    <li>AutoCAD, SolidWorks, Ansys</li>
+                    <li>Microsoft Excel, Power BI, Visio, MS Project</li>
+                    <li>Trello</li>
+                </ul>
+            </div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div>
+<div class="role">
+    <h3>PhD, Mechanical Engineering</h3>
+    <p class="meta">King Fahd University of Petroleum and Minerals, in progress</p>
+</div>
+<div class="role">
+    <h3>B.Sc., Mechanical Engineering</h3>
+    <p class="meta">Khulna University of Engineering & Technology (KUET), 2016 to 2020, CGPA 3.76 / 4.00<br>
+    Two-time Dean's Awardee (2016-17, 2018-19)</p>
+</div>
+<div class="role">
+    <h3>Higher Secondary Certificate</h3>
+    <p class="meta">Dhaka Residential Model College, 2013 to 2015, GPA 5.00 / 5.00</p>
+</div>
+
+<div class="role">
+    <h3>Training & Certifications</h3>
+    <ul>
+        <li>Aseptic Sterile Manufacturing, ROB Walker GMP Consultancy Ltd</li>
+        <li>Introduction to GMP Annex I, Pharmauni</li>
+        <li>Mastering Procurement & Contract Management, UniAthena</li>
+        <li>Excel Skills for Business & Supply Chain Sourcing (Coursera / Macquarie / Rutgers)</li>
+        <li>Foundations of Project Management (Coursera)</li>
+    </ul>
+</div>
+
+<div class="role">
+    <h3>Teaching & Leadership</h3>
+    <ul>
+        <li><strong>Industrial Trainer:</strong> AutoCAD in HVAC, P&ID, and utility line designs, EDGE, April to June 2024, trained 70+ students over multiple intensive batches.</li>
+        <li><strong>President, Spectrum (KUET Skill Development Club):</strong> Trained 150+ participants in advanced Microsoft Excel and PowerPoint workshops.</li>
+        <li><strong>Vice-President, KUET Mechanical Engineering Association:</strong> Coordinated a national festival with 700+ participants from 35+ universities.</li>
+    </ul>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div>
+<p style="margin-top:0">Please feel free to reach out regarding research collaborations, engineering projects, or consultancy opportunities.</p>
+<div class="btns"><a class="btn fill" href="mailto:rafiuahamed07@gmail.com">rafiuahamed07@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/rafiuahamed" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://sites.google.com/view/rafiuahamed" target="_blank" rel="noopener">Google Sites portfolio</a></div>
+</div>
+</section>
+</main>
+
+<footer>
+    <div class="wrap">Rafiu Ahamed &mdash; Mechanical Engineer & PhD Researcher.</div>
+</footer>
+</body>
+</html>
